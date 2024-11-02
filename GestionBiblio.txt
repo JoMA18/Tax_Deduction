@@ -1,0 +1,8 @@
+Un sistema para gestionar libros, miembros, préstamos y devoluciones en una biblioteca.
+
+
+Libro: Atributos como título, autor, género, y mas.
+Miembro: Atributos como nombre, ID, contacto, e historial de préstamos.
+Prestamo: Atributos como fecha de préstamo y fecha de devolución.
+Biblioteca: Contiene una colección de libros y administra los préstamos y devoluciones.
+Empleado: Personal que gestiona la biblioteca, con atributos como ID y rol.
