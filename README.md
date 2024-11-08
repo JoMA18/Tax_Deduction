@@ -1,10 +1,10 @@
-**Library Loan System**
+**Company Tax Deduction Program**
 
-A system to help a libary to have a control of ussers, workers and material, so it can have a better control of the books or other libary materials.
-The objective is to solve the probematics of the library to have a control of those books and materials that are available at the moment or in the other hand, there aren´t.
+Due to the problems to calculate deductions in big companies, with different employees that earn different salaries, some companies need a system to help them to deduce taxes.
 
-The idea is a pogram that will register most of the books, documents or other files available, but at the same time, it could register if the material is actually on loan or is available
-for other users, the material will have a description as gender, title and author, and once the usser take it on loan, they will be available to check the information and dates.
+This program will help to deduce taxes of employees in a certain company, the program counts with 5 classes, the principal is the company, which one who add employees and taxes deductions,and with all the data can give the complete information of the employees and calcuate the total of all taxes deductions; for the other classes there are the class 'employee' and the class 'deduction', both have a composition, due to the fact that for a dedcution you need a employee, and vice versa. Then there atre the classes with an inheritance from the class employee, the class 'hiredEmployee' and the class 'indefiniteEmployee', this classes will redifine some values from the preview class, and with this sections the company can categorize the type of employee and the differnce on taxes that this workers have.
 
-The usser will be defined with an ID, name, number or contact, and a borrowed book record; the material as books or files will be part of the library, and of course the principal objecct: the library; 
-also the idea of a loan, that will have the dates and the characteristics of the material loan, and finally the librarian that have an ID and a role.
+The program is an optional solution for those companies with a necessity to deduce taxes for a lot of workers, an more effctive if is common to recive timely and complete workers, so that the difference of taxes and work hours doesnt affect the deduction, at the end the company can have a financial resuem of all the taxes deductions and the information of all the employees.
+
+
+![TaxDeductionProject drawio](https://github.com/user-attachments/assets/dfdfc4af-acc6-4724-b86c-ea0bb7f3551b)
