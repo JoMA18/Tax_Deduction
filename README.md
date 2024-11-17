@@ -7,4 +7,7 @@ This program will help to deduce taxes of employees in a certain company, the pr
 The program is an optional solution for those companies with a necessity to deduce taxes for a lot of workers, an more effctive if is common to recive timely and complete workers, so that the difference of taxes and work hours doesnt affect the deduction, at the end the company can have a financial resuem of all the taxes deductions and the information of all the employees.
 
 
-![TaxDeductionProject drawio](https://github.com/user-attachments/assets/dfdfc4af-acc6-4724-b86c-ea0bb7f3551b)
+![TaxDeductionProject drawio (1) drawio](https://github.com/user-attachments/assets/3b70fa3a-c4e4-4044-b068-2cc66725cbc1)
+
+
+
