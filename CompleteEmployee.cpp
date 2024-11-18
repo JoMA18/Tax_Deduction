@@ -11,7 +11,8 @@ float CompleteEmployee::getCompleteSalary() const override {
 }
 
 float PartialEmployee::getCalculateTax() const override {
-    return completesalary * 0.25f; // 25% of tax according to salary and  anual bonus
+    completesalary = completesalary * 0.25f; // 25% of tax according to salary and  anual bonus
+    return completesalary
 }
 
 string PartialEmployee::getEmployeeInfo() const override {
