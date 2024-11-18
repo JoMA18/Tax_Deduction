@@ -13,8 +13,8 @@ public:
     Employee(string name, string id, float salary)
 
     float getSalary();
-    void setEmployeeInfo(string);
-    string getEmployeeInfo();
+    string getName();
+    string getID();
 };
 
 #endif
