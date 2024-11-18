@@ -10,7 +10,7 @@ float Employee::getSalary(){
     return salary
 }
 void Employee::setEmployeeInfo(string){
-    employeeInfo = "Employee: " + name + " - ID: " + id;
+    employeeInfo = "Employee: " + name + "\n - ID: " + id;
 }
 string Employee::getEmployeeInfo(){
     return employeeInfo
