@@ -8,7 +8,7 @@ private:
     float anualBonus;
 
 public:
-    CompleteEmployee(const string name, const string id, float anualBonus);
+    CompleteEmployee(string name, string id, float anualBonus);
     float getSalary(); 
     float getCalculateTax();
     string getEmployeeInfo(); 
