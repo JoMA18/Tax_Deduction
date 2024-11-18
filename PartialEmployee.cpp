@@ -13,7 +13,8 @@ float PartialEmployee::getPartialSalary() const override {
 }
 
 float PartialEmployee::getCalculateTax() const override {
-    return Partialsalary * 0.15f; // 15% of tax according to salary
+    partialsalary = Partialsalary * 0.15f; // 15% of tax according to salary
+    return partialsalary
 }
 
 string PartialEmployee::getEmployeeInfo() const override {
