@@ -11,7 +11,7 @@ private:
 public:
     PartialEmployee(string name, string id, int workedHour, float hourSalary);
 
-    float getSalary(); 
+    float getPartialSalary(); 
     float getCalculateTax();
     string getEmployeeInfo(); 
 };
