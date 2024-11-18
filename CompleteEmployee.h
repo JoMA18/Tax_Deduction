@@ -8,8 +8,8 @@ private:
     float anualBonus;
 
 public:
-    CompleteEmployee(string name, string id, float anualBonus);
-    float getSalary(); 
+    CompleteEmployee(float salary, float anualBonus);
+    float getCompleteSalary(); 
     float getCalculateTax();
     string getEmployeeInfo(); 
 };
