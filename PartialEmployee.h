@@ -9,11 +9,11 @@ private:
     float hourSalary;
 
 public:
-    PartialEmployee(const string name, const string id, int workedHour, float hourSalary)
+    PartialEmployee(const string name, const string id, int workedHour, float hourSalary);
 
-    float getSalary() 
-    float getCalculateTax()
-    string getEmployeeInfo() 
+    float getSalary(); 
+    float getCalculateTax();
+    string getEmployeeInfo(); 
 };
 
 #endif 
