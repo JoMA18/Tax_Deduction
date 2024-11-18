@@ -7,8 +7,8 @@ private:
 
 public:
     TaxDeduction(float totalTax); 
-    float getTotalTax();
-    float getDeduction();
+    float getPTotalTax();
+    float getCTotalTax();
 };
 
 #endif 
