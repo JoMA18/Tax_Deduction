@@ -9,9 +9,11 @@ Employee::Employee(string_name, string_id, float_salary){
 float Employee::getSalary(){
     return salary
 }
-void Employee::setEmployeeInfo(string){
-    employeeInfo = "Employee: " + name + "\n - ID: " + id;
+
+string Employee:: getName(){
+    return name
 }
-string Employee::getEmployeeInfo(){
-    return employeeInfo
+
+string Employee:: getID(){
+    return id
 }
