@@ -9,7 +9,7 @@ private:
     float hourSalary;
 
 public:
-    PartialEmployee(string name, string id, int workedHour, float hourSalary);
+    PartialEmployee(float salary, int workedHour, float hourSalary);
 
     float getPartialSalary(); 
     float getCalculateTax();
