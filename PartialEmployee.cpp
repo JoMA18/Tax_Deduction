@@ -1,15 +1,14 @@
 #include "PartialEmployee.h"
 
-PartialEmployee::PartialEmployee(string _name, string _id, int _workedHour, float _hourSalary) : Employee(_name,_id){
-    name = _name;
-    id = _id;
+PartialEmployee::PartialEmployee(string _name, string _id, int _workedHour, float _hourSalary) : Employee(_salary){
+    salary = _salary
     workedHour = _workedHour;
     hourSalary = _hourSalary;
 }
 
-float PartialEmployee::getSalary() const override {
-    salary = workedHour * hourSalary;
-    return salary;
+float PartialEmployee::getPartialSalary() const override {
+    Partialsalary = workedHour * hourSalary;
+    return Partialsalary + salary;
 }
 
 float PartialEmployee::getCalculateTax() const override {
@@ -19,3 +18,4 @@ float PartialEmployee::getCalculateTax() const override {
 string PartialEmployee::getEmployeeInfo() const override {
     return "PartialEmployee: " + name + " - ID: " + id;
 }
+
