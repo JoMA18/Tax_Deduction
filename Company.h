@@ -18,7 +18,6 @@ public:
 
     void setEmployee(Employee*);
     string getEmployee();
-    float getDeduction();
     void setTotalTax(float);
     float getTotalTax();
     string getCompanyInfo();
