@@ -8,11 +8,12 @@ PartialEmployee::PartialEmployee(string _name, string _id, int _workedHour, floa
 
 float PartialEmployee::getPartialSalary() const override {
     Partialsalary = workedHour * hourSalary;
-    return Partialsalary + salary;
+    PartialSalary = PartialSalary + salary
+    return Partialsalary;
 }
 
 float PartialEmployee::getCalculateTax() const override {
-    return salary * 0.15f; // 15% of tax according to salary
+    return Partialsalary * 0.15f; // 15% of tax according to salary
 }
 
 string PartialEmployee::getEmployeeInfo() const override {
