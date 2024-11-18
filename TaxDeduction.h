@@ -1,14 +1,14 @@
 #ifndef TAX_DEDUCTION_H
 #define TAX_DEDUCTION_H
 
-class TaxDeduction {
+class TaxDeduction : public CompleteEmployee : public PartialEmployee {
 private:
     float totalTax;
 
 public:
     TaxDeduction(float totalTax); 
-    void setApplyDeduction(float deduction);
-    float getApplyDeduction();
+    float getTotalTax();
+    float getDeduction();
 };
 
-#endif // TAX_DEDUCTION_H
+#endif 
