@@ -10,11 +10,11 @@ protected:
     float salary;
 
 public:
-    Employee(const string name, const string id, float salary)
+    Employee(string name, string id, float salary)
 
-    virtual float getSalary() const = 0;
-    virtual void setEmployeeInfo(string);
-    virtual string getEmployeeInfo() const = 0;
+    float getSalary();
+    void setEmployeeInfo(string);
+    string getEmployeeInfo();
 };
 
 #endif
