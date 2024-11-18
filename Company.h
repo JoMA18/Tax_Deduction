@@ -14,7 +14,7 @@ private:
     TaxDeduction deduction;
 
 public:
-    Company(const string companyName, const string companyInfo);
+    Company(string companyName, string companyInfo);
 
     void setEmployee(Employee*);
     string getEmployee();
