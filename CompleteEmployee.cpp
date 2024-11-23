@@ -1,20 +1,33 @@
 #include "CompleteEmployee.h"
 
-CompleteEmployee::CompleteEmployee(float _salary, float _anualbonus) : Employee(_salary){
+CompleteEmployee::CompleteEmployee(const std::string name, const std::string id, float salary, float anualBonus)
+    : Employee(name, id), salary(salary), anualBonus(anualBonus) {}
+
+void CompleteEmployee::setSalary(float _salary) {
     salary = _salary;
-    anualbonus = _anualbonus
 }
 
-float CompleteEmployee::getCompleteSalary() const override {
-    completesalary = salary + anualbonus;
-    return completesalary;
+void CompleteEmployee::setAnualBonus(float _anualBonus) {
+    anualBonus = _anualBonus;
 }
 
-float PartialEmployee::getCalculateTax() const override {
-    completesalary = completesalary * 0.25f; // 25% of tax according to salary and  anual bonus
-    return completesalary
+float CompleteEmployee::getSalary() const{
+    return salary;
 }
 
-string PartialEmployee::getEmployeeInfo() const override {
-    return "PartialEmployee: " + name + " - ID: " + id;
+float CompleteEmployee::getAnualBonus() const{
+    return anualBonus;
+}
+
+float CompleteEmployee::getCompleteSalary() const{
+    return salary + anualBonus;
+}
+
+float CompleteEmployee::getCalculateTax() const{
+    float tax = (getCompleteSalary()) * 0.15f; // 15% of tax
+    return tax;
+}
+
+std::string CompleteEmployee::saveData() const {
+    return "Complete Employee: " + name + " ID:" + id + " Salary: " + std::to_string(getCompleteSalary()) + "---> Tax:" + std::to_string(getCalculateTax()) + "\n";
 }
