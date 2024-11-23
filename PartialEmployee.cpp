@@ -1,23 +1,26 @@
 #include "PartialEmployee.h"
 
-PartialEmployee::PartialEmployee(string _name, string _id, int _workedHour, float _hourSalary) : Employee(_salary){
-    salary = _salary
+
+
+PartialEmployee::PartialEmployee(const std::string name, const std::string id, float workedHour): Employee(name, id), workedHour(workedHour) {}
+
+int PartialEmployee::getWorkedHour() const {
+    return workedHour;
+}
+void PartialEmployee::setWorkedHour(float _workedHour){
     workedHour = _workedHour;
-    hourSalary = _hourSalary;
 }
 
-float PartialEmployee::getPartialSalary() const override {
-    Partialsalary = workedHour * hourSalary;
-    PartialSalary = PartialSalary + salary
-    return Partialsalary;
+float PartialEmployee::getPartialSalary() const {
+    return workedHour * 50.0f; // 100 hundred of salary per hour
 }
 
-float PartialEmployee::getCalculateTax() const override {
-    partialsalary = Partialsalary * 0.15f; // 15% of tax according to salary
-    return partialsalary
+float PartialEmployee::getCalculateTax() const {
+    float tax = getPartialSalary() *  0.12f; // 12% of tax 
+    return tax;
 }
 
-string PartialEmployee::getEmployeeInfo() const override {
-    return "PartialEmployee: " + name + " - ID: " + id;
+std::string PartialEmployee::saveData() const {
+    return "Partial Employee: " + name + " ID:" + id + " Salary: " + std::to_string(getPartialSalary()) + "---> Tax:" + std::to_string(getCalculateTax()) + "\n";
 }
 
