@@ -1,19 +1,30 @@
 #ifndef PARTIAL_EMPLOYEE_H
 #define PARTIAL_EMPLOYEE_H
 
-#include "Employee.h"
+#include "employee.h"
+#include <string>
+using namespace std;
 
+// Employee Inheritance
 class PartialEmployee : public Employee {
 private:
-    int workedHour;
-    float hourSalary;
+    float workedHour; 
 
 public:
-    PartialEmployee(float salary, int workedHour, float hourSalary);
+    // Constructor
+    PartialEmployee(const std::string name, const std::string id, float workedHour);
 
-    float getPartialSalary(); 
-    float getCalculateTax();
-    string getEmployeeInfo(); 
+    // Getters
+    int getWorkedHour() const;
+
+    // Setters
+    void setWorkedHour(float workedHour);
+
+    // Methods
+    float getPartialSalary() const;
+    float getCalculateTax() const;
+    std::string saveData() const;
+
 };
 
-#endif 
+#endif
