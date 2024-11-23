@@ -1,22 +1,69 @@
 #include "Company.h"
+#include <iostream>
 
-Company::Company(string _companyName, string _companyInfo){
+Company::Company(const std::string _companyName, int _year, const std::string _location, CEO ceo) {
+        companyName = _companyName;
+        year = _year;
+        location = _location;
+        ceo = CEO();
+    }
+
+void Company::setCompanyName(const std::string _companyName) {
     companyName = _companyName;
-    companyInfo = _companyInfo;
 }
 
-void setEmployee(Employee*) : Employee(_name,_id){
-    employee = _name + _id;
+void Company::setYear(int _year) {
+    year = _year;
 }
-string getEmployee(){
-    return employee
+
+void Company::setLocation(const std::string _location) {
+    location = _location;
 }
-void setTotalTax(float) : TaxDeduction(_totalTax){
-    TotalTax = _totalTax;
+
+std::string Company::getCompanyName() const { 
+    return companyName; 
 }
-float getTotalTax(){
-    return TotalTax
+
+int Company::getYear() const {
+    return year; 
 }
-string getCompanyInfo(){
-    return "Company Name: " + companyName + "\n - Company Info: " + companyInfo;
+
+std::string Company::getLocation() const {
+    return location;
+}
+
+void Company::addCeo(CEO ceo){
+    ceo = saveCeoData();
+}
+
+void Company::addPartialEmployee(PartialEmployee PEmployee) {
+    PEmployee.push_back(PartialEmployee);
+}
+
+void Company::addCompleteEmployee(CompleteEmployee CEmployee) {
+    CEmployee.push_back(CompleteEmployee);
+}
+
+std::string Company::showCeo(){
+    return ceo;
+}
+
+std::string Company::showCompleteEmployees(){
+    string message = "" ;
+    for (int i = 0; i < CEmployee.size(); i++) {
+    message = message + CEmployee[i];
+    }   
+    return message;
+}
+
+std::string Company::showPartialEmployees(){   
+    string message = "" ;
+    for (int i = 0; i < PEmployee.size(); i++) {
+    message = message + PEmployee[i];
+    }   
+    return message;
+}
+
+std::string Company::showInfo() const {
+    return "Company: " + companyName + "\nFoundation: " + to_string(year) + "\nLocation: " + location + "\n";
 }
