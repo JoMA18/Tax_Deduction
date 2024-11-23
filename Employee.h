@@ -2,19 +2,29 @@
 #define EMPLOYEE_H
 
 #include <string>
+#include <iostream>
+
 
 class Employee {
-protected:
-    string name;
-    string id;
-    float salary;
+protected: // Super Class
+    std::string name;
+    std::string id;
 
 public:
-    Employee(string name, string id, float salary)
+    // Constructor
+    Employee( const std::string name, const std::string id);
 
-    float getSalary();
-    string getName();
-    string getID();
+    // Getters
+    std::string getName() const; 
+    std::string getID() const;
+
+    // Setters
+    void setName(const std::string name);
+    void setId(const std::string id);
+
+    // Method
+    std::string showInfo();
+
 };
 
 #endif
